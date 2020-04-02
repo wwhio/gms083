@@ -49,7 +49,7 @@ public class SkillMacro {
     public int getSkill3() {
         return skill3;
     }
-    
+
     public void setSkill1(int skill) {
         skill1 = skill;
     }

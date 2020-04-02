@@ -25,22 +25,15 @@ import client.MapleCharacter;
 import client.MapleClient;
 import client.Skill;
 import client.SkillFactory;
-
-import java.awt.Point;
-import java.awt.Rectangle;
-
-import constants.skills.BlazeWizard;
-import constants.skills.Evan;
-import constants.skills.FPMage;
-import constants.skills.NightWalker;
-import constants.skills.Shadower;
+import constants.skills.*;
 import server.MapleStatEffect;
 import server.life.MapleMonster;
 import server.life.MobSkill;
 import tools.MaplePacketCreator;
 
+import java.awt.*;
+
 /**
- *
  * @author LaiLaiNoob
  */
 public class MapleMist extends AbstractMapleMapObject {
@@ -74,11 +67,11 @@ public class MapleMist extends AbstractMapleMapObject {
             case Evan.RECOVERY_AURA:
                 isRecoveryMist = true;
                 break;
-                
+
             case Shadower.SMOKE_SCREEN: // Smoke Screen
                 isPoisonMist = false;
                 break;
-                
+
             case FPMage.POISON_MIST: // FP mist
             case BlazeWizard.FLAME_GEAR: // Flame Gear
             case NightWalker.POISON_BOMB: // Poison Bomb
@@ -110,9 +103,9 @@ public class MapleMist extends AbstractMapleMapObject {
     }
 
     public boolean isRecoveryMist() {
-    	return isRecoveryMist;
+        return isRecoveryMist;
     }
-    
+
     public int getSkillDelay() {
         return skillDelay;
     }

@@ -21,12 +21,13 @@
 */
 package server.maps;
 
-import java.awt.Point;
+import tools.Pair;
+
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import tools.Pair;
 
 /**
  * @author Lerk
@@ -56,20 +57,20 @@ public class MapleReactorStats {
 
     public void addState(byte state, List<StateData> data, int timeOut) {
         stateInfo.put(state, data);
-        if(timeOut > -1) timeoutInfo.put(state, timeOut);
+        if (timeOut > -1) timeoutInfo.put(state, timeOut);
     }
-    
+
     public void addState(byte state, int type, Pair<Integer, Integer> reactItem, byte nextState, int timeOut, byte canTouch) {
         List<StateData> data = new ArrayList<>();
         data.add(new StateData(type, reactItem, null, nextState));
         stateInfo.put(state, data);
     }
-    
+
     public int getTimeout(byte state) {
         Integer i = timeoutInfo.get(state);
         return (i == null) ? -1 : i;
     }
-    
+
     public byte getTimeoutState(byte state) {
         return stateInfo.get(state).get(stateInfo.get(state).size() - 1).getNextState();
     }

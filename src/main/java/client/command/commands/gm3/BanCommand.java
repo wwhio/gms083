@@ -23,9 +23,9 @@
 */
 package client.command.commands.gm3;
 
-import client.command.Command;
-import client.MapleClient;
 import client.MapleCharacter;
+import client.MapleClient;
+import client.command.Command;
 import net.server.Server;
 import server.TimerManager;
 import tools.DatabaseConnection;
@@ -52,7 +52,7 @@ public class BanCommand extends Command {
         MapleCharacter target = c.getChannelServer().getPlayerStorage().getCharacterByName(ign);
         if (target != null) {
             String readableTargetName = MapleCharacter.makeMapleReadable(target.getName());
-            String ip = target.getClient().getSession().getRemoteAddress().toString().split(":")[0];
+            String ip = target.getClient().getSession().getRemoteAddress().split(":")[0];
             //Ban ip
             PreparedStatement ps = null;
             try {

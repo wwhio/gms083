@@ -4,7 +4,6 @@ import cn.hutool.core.io.resource.ClassPathResource;
 import com.esotericsoftware.yamlbeans.YamlReader;
 
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
