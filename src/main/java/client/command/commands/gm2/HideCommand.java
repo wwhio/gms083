@@ -36,7 +36,7 @@ public class HideCommand extends Command {
     @Override
     public void execute(MapleClient c, String[] params) {
         MapleCharacter player = c.getPlayer();
-        SkillFactory.getSkill(9101004).getEffect(SkillFactory.getSkill(9101004).getMaxLevel()).applyTo(player);
+        SkillFactory.INSTANCE.getSkill(9101004).getEffect(SkillFactory.INSTANCE.getSkill(9101004).getMaxLevel()).applyTo(player);
 
     }
 }

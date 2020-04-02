@@ -1115,7 +1115,7 @@ public class MapleStatEffect {
     private void applyMonsterBuff(MapleCharacter applyfrom) {
         Rectangle bounds = calculateBoundingBox(applyfrom.getPosition(), applyfrom.isFacingLeft());
         List<MapleMapObject> affected = applyfrom.getMap().getMapObjectsInRect(bounds, Arrays.asList(MapleMapObjectType.MONSTER));
-        Skill skill_ = SkillFactory.getSkill(sourceid);
+        Skill skill_ = SkillFactory.INSTANCE.getSkill(sourceid);
         int i = 0;
         for (MapleMapObject mo : affected) {
             MapleMonster monster = (MapleMonster) mo;
@@ -1393,7 +1393,7 @@ public class MapleStatEffect {
                 boolean isCygnus = applyfrom.getJob().isA(MapleJob.BLAZEWIZARD2);
                 boolean isEvan = applyfrom.getJob().isA(MapleJob.EVAN7);
                 if (isAFpMage || isCygnus || isEvan || applyfrom.getJob().isA(MapleJob.IL_MAGE)) {
-                    Skill amp = isAFpMage ? SkillFactory.getSkill(FPMage.ELEMENT_AMPLIFICATION) : (isCygnus ? SkillFactory.getSkill(BlazeWizard.ELEMENT_AMPLIFICATION) : (isEvan ? SkillFactory.getSkill(Evan.MAGIC_AMPLIFICATION) : SkillFactory.getSkill(ILMage.ELEMENT_AMPLIFICATION)));
+                    Skill amp = isAFpMage ? SkillFactory.INSTANCE.getSkill(FPMage.ELEMENT_AMPLIFICATION) : (isCygnus ? SkillFactory.INSTANCE.getSkill(BlazeWizard.ELEMENT_AMPLIFICATION) : (isEvan ? SkillFactory.INSTANCE.getSkill(Evan.MAGIC_AMPLIFICATION) : SkillFactory.INSTANCE.getSkill(ILMage.ELEMENT_AMPLIFICATION)));
                     int ampLevel = applyfrom.getSkillLevel(amp);
                     if (ampLevel > 0) {
                         mod = amp.getEffect(ampLevel).getX() / 100.0;
@@ -1429,8 +1429,8 @@ public class MapleStatEffect {
         if (chr.isCygnus()) {
             id = NightWalker.ALCHEMIST;
         }
-        int alchemistLevel = chr.getSkillLevel(SkillFactory.getSkill(id));
-        return alchemistLevel == 0 ? null : SkillFactory.getSkill(id).getEffect(alchemistLevel);
+        int alchemistLevel = chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(id));
+        return alchemistLevel == 0 ? null : SkillFactory.INSTANCE.getSkill(id).getEffect(alchemistLevel);
     }
 
     private boolean isGmBuff() {

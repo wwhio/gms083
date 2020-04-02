@@ -63,7 +63,7 @@ public final class MagicDamageHandler extends AbstractDealDamageHandler {
 
         chr.getMap().broadcastMessage(chr, packet, false, true);
         MapleStatEffect effect = attack.getAttackEffect(chr, null);
-        Skill skill = SkillFactory.getSkill(attack.skill);
+        Skill skill = SkillFactory.INSTANCE.getSkill(attack.skill);
         MapleStatEffect effect_ = skill.getEffect(chr.getSkillLevel(skill));
         if (effect_.getCooldown() > 0) {
             if (chr.skillIsCooling(attack.skill)) {
@@ -74,7 +74,7 @@ public final class MagicDamageHandler extends AbstractDealDamageHandler {
             }
         }
         applyAttack(attack, chr, effect.getAttackCount());
-        Skill eaterSkill = SkillFactory.getSkill((chr.getJob().getId() - (chr.getJob().getId() % 10)) * 10000);// MP Eater, works with right job
+        Skill eaterSkill = SkillFactory.INSTANCE.getSkill((chr.getJob().getId() - (chr.getJob().getId() % 10)) * 10000);// MP Eater, works with right job
         int eaterLevel = chr.getSkillLevel(eaterSkill);
         if (eaterLevel > 0) {
             for (Integer singleDamage : attack.allDamage.keySet()) {

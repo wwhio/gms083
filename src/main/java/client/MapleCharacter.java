@@ -1027,7 +1027,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
         }
         for (Integer skillId : skills) {
             if (skillId != 0) {
-                Skill skill = SkillFactory.getSkill(skillId);
+                Skill skill = SkillFactory.INSTANCE.getSkill(skillId);
                 final int skilllevel = getSkillLevel(skill);
                 if (skilllevel > 0) {
                     continue;
@@ -1809,7 +1809,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
         }
         final MapleCharacter chr = this;
         if (job.equals(MapleJob.DARKKNIGHT)) {
-            Skill BerserkX = SkillFactory.getSkill(DarkKnight.BERSERK);
+            Skill BerserkX = SkillFactory.INSTANCE.getSkill(DarkKnight.BERSERK);
             final int skilllevel = getSkillLevel(BerserkX);
             if (skilllevel > 0) {
                 berserk = chr.getHp() * 100 / chr.getCurrentMaxHp() < BerserkX.getEffect(skilllevel).getX();
@@ -2102,7 +2102,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     public void decreaseBattleshipHp(int decrease) {
         this.battleshipHp -= decrease;
         if (battleshipHp <= 0) {
-            Skill battleship = SkillFactory.getSkill(Corsair.BATTLE_SHIP);
+            Skill battleship = SkillFactory.INSTANCE.getSkill(Corsair.BATTLE_SHIP);
             int cooldown = battleship.getEffect(getSkillLevel(battleship)).getCooldown();
             announce(MaplePacketCreator.skillCooldown(Corsair.BATTLE_SHIP, cooldown));
             addCooldown(Corsair.BATTLE_SHIP, Server.getInstance().getCurrentTime(), cooldown * 1000);
@@ -4416,7 +4416,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
             if (beholderBuffSchedule != null) {
                 beholderBuffSchedule.cancel(false);
             }
-            Skill bHealing = SkillFactory.getSkill(DarkKnight.AURA_OF_BEHOLDER);
+            Skill bHealing = SkillFactory.INSTANCE.getSkill(DarkKnight.AURA_OF_BEHOLDER);
             int bHealingLvl = getSkillLevel(bHealing);
             if (bHealingLvl > 0) {
                 final MapleStatEffect healEffect = bHealing.getEffect(bHealingLvl);
@@ -4435,7 +4435,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
                     }
                 }, healInterval, healInterval);
             }
-            Skill bBuff = SkillFactory.getSkill(DarkKnight.HEX_OF_BEHOLDER);
+            Skill bBuff = SkillFactory.INSTANCE.getSkill(DarkKnight.HEX_OF_BEHOLDER);
             if (getSkillLevel(bBuff) > 0) {
                 final MapleStatEffect buffEffect = bBuff.getEffect(getSkillLevel(bBuff));
                 int buffInterval = buffEffect.getX() * 1000;
@@ -4611,7 +4611,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
         int skillId = getJobMapChair(job);
         int skillLv = getSkillLevel(skillId);
         if (skillLv > 0) {
-            MapleStatEffect mapChairSkill = SkillFactory.getSkill(skillId).getEffect(skillLv);
+            MapleStatEffect mapChairSkill = SkillFactory.INSTANCE.getSkill(skillId).getEffect(skillLv);
             return cancelEffect(mapChairSkill, false, -1);
         }
 
@@ -4626,7 +4626,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
         int skillId = getJobMapChair(job);
         int skillLv = getSkillLevel(skillId);
         if (skillLv > 0) {
-            MapleStatEffect mapChairSkill = SkillFactory.getSkill(skillId).getEffect(skillLv);
+            MapleStatEffect mapChairSkill = SkillFactory.INSTANCE.getSkill(skillId).getEffect(skillLv);
             mapChairSkill.applyTo(this);
             return true;
         }
@@ -5240,7 +5240,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     }
 
     public int getMasterLevel(int skill) {
-        SkillEntry ret = skills.get(SkillFactory.getSkill(skill));
+        SkillEntry ret = skills.get(SkillFactory.INSTANCE.getSkill(skill));
         if (ret == null) {
             return 0;
         }
@@ -5845,7 +5845,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     }
 
     public int getSkillLevel(int skill) {
-        SkillEntry ret = skills.get(SkillFactory.getSkill(skill));
+        SkillEntry ret = skills.get(SkillFactory.INSTANCE.getSkill(skill));
         if (ret == null) {
             return 0;
         }
@@ -5860,7 +5860,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     }
 
     public long getSkillExpiration(int skill) {
-        SkillEntry ret = skills.get(SkillFactory.getSkill(skill));
+        SkillEntry ret = skills.get(SkillFactory.INSTANCE.getSkill(skill));
         if (ret == null) {
             return -1;
         }
@@ -5991,7 +5991,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     }
 
     public void handleEnergyChargeGain() { // to get here energychargelevel has to be > 0
-        Skill energycharge = isCygnus() ? SkillFactory.getSkill(ThunderBreaker.ENERGY_CHARGE) : SkillFactory.getSkill(Marauder.ENERGY_CHARGE);
+        Skill energycharge = isCygnus() ? SkillFactory.INSTANCE.getSkill(ThunderBreaker.ENERGY_CHARGE) : SkillFactory.INSTANCE.getSkill(Marauder.ENERGY_CHARGE);
         MapleStatEffect ceffect;
         ceffect = energycharge.getEffect(getSkillLevel(energycharge));
         TimerManager tMan = TimerManager.getInstance();
@@ -6025,7 +6025,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
 
     public void handleOrbconsume() {
         int skillid = isCygnus() ? DawnWarrior.COMBO : Crusader.COMBO;
-        Skill combo = SkillFactory.getSkill(skillid);
+        Skill combo = SkillFactory.INSTANCE.getSkill(skillid);
         List<Pair<MapleBuffStat, Integer>> stat = Collections.singletonList(new Pair<>(MapleBuffStat.COMBO, 1));
         setBuffedValue(MapleBuffStat.COMBO, 1);
         client.announce(MaplePacketCreator.giveBuff(skillid, combo.getEffect(getSkillLevel(combo)).getDuration() + (int) ((getBuffedStarttime(MapleBuffStat.COMBO) - System.currentTimeMillis())), stat));
@@ -6393,17 +6393,17 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
             addhp += Randomizer.rand(12, 16);
             addmp += Randomizer.rand(10, 12);
         } else if (job.isA(MapleJob.WARRIOR) || job.isA(MapleJob.DAWNWARRIOR1)) {
-            improvingMaxHP = isCygnus() ? SkillFactory.getSkill(DawnWarrior.MAX_HP_INCREASE) : SkillFactory.getSkill(Warrior.IMPROVED_MAXHP);
+            improvingMaxHP = isCygnus() ? SkillFactory.INSTANCE.getSkill(DawnWarrior.MAX_HP_INCREASE) : SkillFactory.INSTANCE.getSkill(Warrior.IMPROVED_MAXHP);
             if (job.isA(MapleJob.CRUSADER)) {
-                improvingMaxMP = SkillFactory.getSkill(1210000);
+                improvingMaxMP = SkillFactory.INSTANCE.getSkill(1210000);
             } else if (job.isA(MapleJob.DAWNWARRIOR2)) {
-                improvingMaxMP = SkillFactory.getSkill(11110000);
+                improvingMaxMP = SkillFactory.INSTANCE.getSkill(11110000);
             }
             improvingMaxHPLevel = getSkillLevel(improvingMaxHP);
             addhp += Randomizer.rand(24, 28);
             addmp += Randomizer.rand(4, 6);
         } else if (job.isA(MapleJob.MAGICIAN) || job.isA(MapleJob.BLAZEWIZARD1)) {
-            improvingMaxMP = isCygnus() ? SkillFactory.getSkill(BlazeWizard.INCREASING_MAX_MP) : SkillFactory.getSkill(Magician.IMPROVED_MAX_MP_INCREASE);
+            improvingMaxMP = isCygnus() ? SkillFactory.INSTANCE.getSkill(BlazeWizard.INCREASING_MAX_MP) : SkillFactory.INSTANCE.getSkill(Magician.IMPROVED_MAX_MP_INCREASE);
             improvingMaxMPLevel = getSkillLevel(improvingMaxMP);
             addhp += Randomizer.rand(10, 14);
             addmp += Randomizer.rand(22, 24);
@@ -6414,7 +6414,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
             addhp += 30000;
             addmp += 30000;
         } else if (job.isA(MapleJob.PIRATE) || job.isA(MapleJob.THUNDERBREAKER1)) {
-            improvingMaxHP = isCygnus() ? SkillFactory.getSkill(ThunderBreaker.IMPROVE_MAX_HP) : SkillFactory.getSkill(Brawler.IMPROVE_MAX_HP);
+            improvingMaxHP = isCygnus() ? SkillFactory.INSTANCE.getSkill(ThunderBreaker.IMPROVE_MAX_HP) : SkillFactory.INSTANCE.getSkill(Brawler.IMPROVE_MAX_HP);
             improvingMaxHPLevel = getSkillLevel(improvingMaxHP);
             addhp += Randomizer.rand(22, 28);
             addmp += Randomizer.rand(18, 23);
@@ -7311,7 +7311,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
                 ps.setInt(1, charid);
                 rs = ps.executeQuery();
                 while (rs.next()) {
-                    Skill pSkill = SkillFactory.getSkill(rs.getInt("skillid"));
+                    Skill pSkill = SkillFactory.INSTANCE.getSkill(rs.getInt("skillid"));
                     if (pSkill != null)  // edit reported by Shavit (=＾● ⋏ ●＾=), thanks Zein for noticing an NPE here
                     {
                         ret.skills.put(pSkill, new SkillEntry(rs.getByte("skilllevel"), rs.getInt("masterlevel"), rs.getLong("expiration")));
@@ -7765,7 +7765,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
             }
 
             if (energybar == 15000) {
-                Skill energycharge = isCygnus() ? SkillFactory.getSkill(ThunderBreaker.ENERGY_CHARGE) : SkillFactory.getSkill(Marauder.ENERGY_CHARGE);
+                Skill energycharge = isCygnus() ? SkillFactory.INSTANCE.getSkill(ThunderBreaker.ENERGY_CHARGE) : SkillFactory.INSTANCE.getSkill(Marauder.ENERGY_CHARGE);
                 MapleStatEffect ceffect = energycharge.getEffect(getSkillLevel(energycharge));
                 localwatk += ceffect.getWatk();
             }
@@ -7780,9 +7780,9 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
             if (job.isA(MapleJob.BOWMAN)) {
                 Skill expert = null;
                 if (job.isA(MapleJob.MARKSMAN)) {
-                    expert = SkillFactory.getSkill(3220004);
+                    expert = SkillFactory.INSTANCE.getSkill(3220004);
                 } else if (job.isA(MapleJob.BOWMASTER)) {
-                    expert = SkillFactory.getSkill(3120005);
+                    expert = SkillFactory.INSTANCE.getSkill(3120005);
                 }
                 if (expert != null) {
                     int boostLevel = getSkillLevel(expert);
@@ -8056,7 +8056,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
 
     public void resetBattleshipHp() {
         int bshipLevel = Math.max(getLevel() - 120, 0);  // thanks alex12 for noticing battleship HP issues for low-level players
-        this.battleshipHp = 400 * getSkillLevel(SkillFactory.getSkill(Corsair.BATTLE_SHIP)) + (bshipLevel * 200);
+        this.battleshipHp = 400 * getSkillLevel(SkillFactory.INSTANCE.getSkill(Corsair.BATTLE_SHIP)) + (bshipLevel * 200);
     }
 
     public void resetEnteredScript() {

@@ -21,15 +21,13 @@
  */
 package net.server;
 
-import client.MapleCharacter;
-import client.MapleClient;
-import client.MapleFamily;
-import client.SkillFactory;
+import client.*;
 import client.command.CommandsExecutor;
 import client.inventory.Item;
 import client.inventory.ItemFactory;
 import client.inventory.manipulator.MapleCashidGenerator;
 import client.newyear.NewYearCardRecord;
+import com.fasterxml.jackson.core.type.TypeReference;
 import config.YamlConfig;
 import constants.game.GameConstants;
 import constants.inventory.ItemConstants;
@@ -63,10 +61,7 @@ import server.TimerManager;
 import server.expeditions.MapleExpeditionBossLog;
 import server.life.MaplePlayerNPCFactory;
 import server.quest.MapleQuest;
-import tools.AutoJCE;
-import tools.DatabaseConnection;
-import tools.FilePrinter;
-import tools.Pair;
+import tools.*;
 
 import java.security.Security;
 import java.sql.Connection;
@@ -870,11 +865,11 @@ public class Server {
         initializeTimelyTasks();    // aggregated method for timely tasks thanks to lxconan
 
         long timeToTake = System.currentTimeMillis();
-        SkillFactory.loadAllSkills();
+        SkillFactory.INSTANCE.loadAllSkills();
         System.out.println("Skills loaded in " + ((System.currentTimeMillis() - timeToTake) / 1000.0) + " seconds");
 
         timeToTake = System.currentTimeMillis();
-
+        Map<Integer, Skill> map = JacksonUtil.json2Bean("unzipString", new TypeReference<Map<Integer, Skill>>(){});
         CashItemFactory.getSpecialCashItems();
         System.out.println("Items loaded in " + ((System.currentTimeMillis() - timeToTake) / 1000.0) + " seconds");
 

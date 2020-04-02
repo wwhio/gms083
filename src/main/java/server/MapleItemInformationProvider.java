@@ -321,12 +321,12 @@ public class MapleItemInformationProvider {
         // thanks GMChuck for detecting player sensitive data being cached into getSlotMax
         if (ItemConstants.isThrowingStar(itemId)) {
             if (c.getPlayer().getJob().isA(MapleJob.NIGHTWALKER1)) {
-                ret += c.getPlayer().getSkillLevel(SkillFactory.getSkill(NightWalker.CLAW_MASTERY)) * 10;
+                ret += c.getPlayer().getSkillLevel(SkillFactory.INSTANCE.getSkill(NightWalker.CLAW_MASTERY)) * 10;
             } else {
-                ret += c.getPlayer().getSkillLevel(SkillFactory.getSkill(Assassin.CLAW_MASTERY)) * 10;
+                ret += c.getPlayer().getSkillLevel(SkillFactory.INSTANCE.getSkill(Assassin.CLAW_MASTERY)) * 10;
             }
         } else if (ItemConstants.isBullet(itemId)) {
-            ret += c.getPlayer().getSkillLevel(SkillFactory.getSkill(Gunslinger.GUN_MASTERY)) * 10;
+            ret += c.getPlayer().getSkillLevel(SkillFactory.INSTANCE.getSkill(Gunslinger.GUN_MASTERY)) * 10;
         }
 
         return ret;
@@ -2141,7 +2141,7 @@ public class MapleItemInformationProvider {
         Map<String, Integer> skilldata = getSkillStats(skillBookId, player.getJob().getId());
         if (skilldata == null || skilldata.get("skillid") == 0) return false;
 
-        Skill skill2 = SkillFactory.getSkill(skilldata.get("skillid"));
+        Skill skill2 = SkillFactory.INSTANCE.getSkill(skilldata.get("skillid"));
         return (skilldata.get("skillid") != 0 && ((player.getSkillLevel(skill2) >= skilldata.get("reqSkillLevel") || skilldata.get("reqSkillLevel") == 0) && player.getMasterLevel(skill2) < skilldata.get("masterLevel")));
     }
 
