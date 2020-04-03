@@ -41,7 +41,7 @@ import net.server.services.type.ChannelServices;
 import net.server.world.MapleParty;
 import net.server.world.MaplePartyCharacter;
 import net.server.world.World;
-import net.vertx.ChannelVerticle;
+import net.vertx.ServerVerticle;
 import org.apache.mina.core.service.IoAcceptor;
 import scripting.event.EventScriptManager;
 import server.TimerManager;
@@ -117,7 +117,7 @@ public final class Channel {
             ip = YamlConfig.config.server.HOST + ":" + port;
 
             Vertx vertx = Vertx.vertx();
-            vertx.deployVerticle(ChannelVerticle.class.getName(), new DeploymentOptions().setConfig(new JsonObject().put("port", port).put("world", world).put("channel", channel)));
+            vertx.deployVerticle(ServerVerticle.class.getName(), new DeploymentOptions().setConfig(new JsonObject().put("port", port).put("world", world).put("channel", channel)));
             if (Server.getInstance().isOnline()) {  // postpone event loading to improve boot time... thanks Riizade, daronhudson for noticing slow startup times
                 eventSM = new EventScriptManager(this, getEvents());
                 eventSM.init();

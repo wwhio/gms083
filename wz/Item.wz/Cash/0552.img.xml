@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0552.img">
-  <imgdir name="05520000">
-    <imgdir name="info">
-      <canvas name="icon" width="32" height="33">
-        <vector name="origin" x="0" y="33"/>
-      </canvas>
-      <canvas name="iconRaw" width="32" height="32">
-        <vector name="origin" x="0" y="33"/>
-      </canvas>
-      <int name="cash" value="1"/>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNqtkEsOwjAMRPecwvKefoXEoqU7DoDgAFEaWkutIzWhn9tjFVokPjuymvh5ZiRnxdg20JvOkeUc4yBCMKxtSVzleDkft3sE5xWXqrFscpyMw+KwyaitSuqAVSvDaLdLApngYQPwiSJ5M3qHxFf7BIK04l65BWnLCAOVvs4xTRBqQ1XtRaerQzy90d4ucbajisQ1Si3CNO+Ga3z4yP9dd1LD98bkT43E/unTytUIvWpu8okXSxY+rjNfcdUvdQcasXkM

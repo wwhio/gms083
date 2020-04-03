@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2091006.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="dojang_move"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="112" height="129">
-      <vector name="origin" x="56" y="128"/>
-      <int name="z" value="0"/>
-      <int name="delay" value="500"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkMFuwyAMhu99Csv3NSRSq1ZK2tueYDtPKDDiKTETMNbs6UfXlJZqN/v/f+zPtMfTNELUzpPlDuu1QNDcW0VsOnx9eX7aIfggWcnRsu5w1h6Ph1VLk1HkgOWUxEbsayG26yTiYQVQusTv9k9+NHzv6DMs1qMpsp4cH1wCKp9BlONXapX9kGzeJhs1VnlWdRm2rL3rirrEOZ95Be0lR+kzC3yTCkP6oLpBGDSZIaSm2d/go+6DvY6yjgwxwqnDzRZhPmd3d3TEYUn+5DvEv77So5xzZiNyqq0uiOVNt+oXTxCI1Q==

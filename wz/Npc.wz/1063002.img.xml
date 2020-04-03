@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1063002.img">
-  <imgdir name="info">
-    <int name="dcLeft" value="-14"/>
-    <int name="dcRight" value="14"/>
-    <int name="dcTop" value="-32"/>
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="viola_white"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="29" height="32">
-      <vector name="origin" x="14" y="32"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNp1ULtuwzAM3PMVBPfEslMULRAlW6dORToXgqTYBGwpkFQl+fvKjh9R0W7k8Xg83u5w7VqI2nmyhmO5YQjaSKvI1Bw/j2/rFwQfhFGitUZzvGmPh/1qR12tyIERXQJL9rxlrNokEPcrgHxK5mQHuB+YMKJKvutTQIii/U7tunzC4g/SB9XNwvqHdLTnRWhbLZxHG146OofRyO8hm/E08cGl9/O1ST6SbcXXpaGgpzNpo7iLjWcfuqzO7fShTrFIYaLwsxe4kAoNx+oVodF9AhzTW/O5qGWwk5B1VJNBuA7xwG2gTgkUd+XcylL9ABKxlI8=

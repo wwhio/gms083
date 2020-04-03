@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0518.img">
-  <imgdir name="05180000">
-    <imgdir name="info">
-      <canvas name="icon" width="29" height="31">
-        <vector name="origin" x="-2" y="31"/>
-        <int name="z" value="0"/>
-      </canvas>
-      <canvas name="iconRaw" width="29" height="31">
-        <vector name="origin" x="-2" y="31"/>
-        <int name="z" value="0"/>
-      </canvas>
-      <int name="slotMax" value="1"/>
-      <int name="cash" value="1"/>
-      <int name="life" value="90"/>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNrFkcFuwjAMhu88heU7tAVNAqmB2267TOMBrDS0llJHarJS9vSEAmm1adpxPln+v9/+JZeHobXQm86zE4XFKkcwol3FUis8frwutwg+kFRknRiFF+PxsF+U3NYVdyDUxmH+UmxXcYL7BcBPKY81St9FlpN7CFHSJD35p6SdIJy5Co3C9Q6hMVw3QeGmSI7o6Y0O7rnOdVxzdA0Kl2uEywhnM5olPNAvhJ7s5y3gRJTZPcLvid7p/O+hJt5bF95oSK7Z3hmlyTd/IJZPJiG7dLzM7t8av5r6qbsC9sWfYQ==

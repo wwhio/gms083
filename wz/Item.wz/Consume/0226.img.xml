@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0226.img">
-  <imgdir name="02260000">
-    <imgdir name="info">
-      <canvas name="icon" width="26" height="30">
-        <vector name="origin" x="-4" y="30"/>
-      </canvas>
-      <canvas name="iconRaw" width="17" height="28">
-        <vector name="origin" x="-8" y="30"/>
-      </canvas>
-      <int name="price" value="500"/>
-      <int name="slotMax" value="200"/>
-    </imgdir>
-    <imgdir name="spec">
-      <int name="incFatigue" value="-30"/>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNqNkDtuwzAMhvecguDu2FHa1IOVbNmyFO0BBFmVCdhUYCmOc/sKeVhF66LVRPF/fACr3di1MJjek2OJq2WBYFi7mthKfH/bZyWCD4pr1To2Ei/G4267qKizNfXAqovLQojNMm5wuwD4KRXxXaXvIvGHuwtR0ooH5R+Sdoxwpjo0EsUGoTFkmyBxXUyJmBmMDu5R53qyFFOjxOwJ4XI151N/fgP8zntV5wm5eklIUf4LWf6NJA734LEnbRAG1Z7i77n4mkou37pwUOPkE8lX5bdTzt3VH43GmTpivVeB7CmRs/VsY5rT9AnjBZzp

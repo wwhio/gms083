@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0599.img">
-  <imgdir name="05990000">
-    <imgdir name="info">
-      <canvas name="icon" width="32" height="28">
-        <vector name="origin" x="0" y="28"/>
-      </canvas>
-      <canvas name="iconRaw" width="32" height="23">
-        <vector name="origin" x="0" y="28"/>
-      </canvas>
-      <int name="slotMax" value="1"/>
-      <int name="cash" value="1"/>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNqtkM0OgjAMx+8+RdO7ghoTTRjevHkx+gDNmNAEuoRNxLd3QUDjx82duv7+H0mTbVuV0JjasRWF81mMYETbjCVXeDrupmsE50kyKq0YhTfjcJtOEq7yjGsQqsIyXm02s7DBdALwieLwOvQOWc62BwFpkobcgLQVhCtnvlC4XCAUhvPCK1ysR0fwNEZ7O8TZmnMOrjbUItw6bTTGR4/833UHun5vXP6pkcX3Pldav6cWoaHyEv7zF9dTpckVn5Iketywu/U4P6c7HkeEBQ==

@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0510.img">
-  <imgdir name="05100000">
-    <imgdir name="info">
-      <canvas name="icon" width="30" height="32">
-        <vector name="origin" x="-2" y="32"/>
-        <int name="z" value="0"/>
-      </canvas>
-      <canvas name="iconRaw" width="30" height="31">
-        <vector name="origin" x="-2" y="32"/>
-        <int name="z" value="0"/>
-      </canvas>
-      <int name="cash" value="1"/>
-      <string name="path" value="Sound/Jukebox.img/Congratulation"/>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNq9krluwzAQRHt/BbG9TclBgBSiXQRI4TLHB2xIhiIsLQ2SkuV8fShZh5GjDavFzpvFAMNi39UVa7UP1pGAfJMB0ySdsmQEvL0+rR+AhYiksHKkBVx0gP1uVdjaKOsZYZ2W2X2ebdIGdivGfkr9G6TvoqUPNwpJkkgthkmSjoCdrYqlgLuUqtTWlDHN29mRPK2W0U3nnLfGJlcnYL0FdhlgfkNbiiP6CazFqukDLkTBrxH+TvSM599D5f8XauElhnK25DeWEH3qb6ROGBfqxTWk+KE56nfX9ZXxR0fGY2wqjOkLTEcKfi1qKHSel+kLjemh0Q==

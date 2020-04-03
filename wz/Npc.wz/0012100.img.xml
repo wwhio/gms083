@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="0012100.img">
-  <imgdir name="info">
-    <imgdir name="speak">
-      <string name="0" value="n0"/>
-      <string name="1" value="n1"/>
-      <string name="2" value="n2"/>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="54" height="80">
-      <vector name="origin" x="26" y="80"/>
-      <int name="z" value="0"/>
-      <int name="delay" value="500"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNp1j8FuwjAMhu88heU74FRj4tDAbU/AHiBqstZa66Am6+ieflmhZJ3YzfL/yf7+8njpWhhcH9iLRrUhBCeVtyy1xtfTy3qPEKIRa1ovTuPoAh4Pq5K72nIPYrq0JFKFItqkJR5WAMuU5c1P679BODvzfktSFmKfvs4nEQbTfqRJCLePGZUZ9R9TZKaYmXJ71ZhUf89Lu5/Ws3dlZDAhu32yjY3G3RNC47huosY95SqDq6KfD/meaxaES7J5RhgnNOuyxBv4dXd9nFvXmvHO7IhyoavfslCevgH8YIq2

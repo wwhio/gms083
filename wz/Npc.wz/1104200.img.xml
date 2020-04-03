@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1104200.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="enterBlackEreb"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="60" height="79">
-      <vector name="origin" x="25" y="76"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj1FuwjAQRP85xWr/SxxUaCvFICG1J4ADuM42WZGsK9ukcHvcQkLN3+zM7vi52pz6DgbygZ1oLOcKgcS6mqXRuN99PL0ihGikNp0T0nimgJv1rOK+qdmDmD6ZZameF0rNk4nrGUCesny5P/sxCNbzd7xFj6Ga/JSE6BNQfgaD6Y5pJInkt52xh3dPn1hMdcW17/byvynTOdHvT0dWa2QwYcKBH65jq3GVZEvctFHjy9udfiAb3VjkPDcsCCeNiyXCOa2uRrSquDbnKHd1AbuqdmU=

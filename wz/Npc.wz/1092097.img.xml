@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1092097.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="nautil_pearl"/>
-      </imgdir>
-    </imgdir>
-    <int name="hideName" value="1"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="89" height="58">
-      <vector name="origin" x="41" y="56"/>
-      <int name="delay" value="1000"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdkLtuwzAMRfd8BcG9sVz0YQNWsnXs1M6FYKk2AZkKJMWN/75q/Yq9kfeSV4eqzrfOQm98IMcS86NAMFw7TdxI/Px4eygQQlSslXVsJA4m4Pl0qKhrNHlg1SUxF+WjKF+PScTTAWDrEn+7f3lvhNrTJU7W3hSLnpwQfQLarkGv7DW1rK6R7NfFKG8xW8KyMW16d9sRxymrJW3eU7Wk5WPE/cIO+u8z5nNqxb0KCzH8kI6txKJEaA01bZT4XKwH9qaObg5ynhpihJvEpxxhSKMvd/wrozZWDSugEGIeq7IRYEu8Vr9mOotc

@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1043001.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="bush2"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="131" height="39">
-      <vector name="origin" x="64" y="39"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj00SgjAMhfeeIpO9UsRxdMbizhPoASpUyAykTlsRbm/9Aa275L3k5ctu37cNdNo6MiwxXQgEzYUpiSuJp+NhvkFwXnGpGsNa4qAd7vPZjtqqJAus2iCmYpUJkS6CiPkMIHaJL+Yl/xuusHT1H+vfFJMeHOdtAIrXoFPNLbTnm6uXmEwpyTvmc/Cni+oY5PngiFgo7pSbKOBOpa/Dj1mKUGuqai8x236pO114MyYZSxUxQi9xvUIYXqPJyPKOjlm+1QM2BnL+

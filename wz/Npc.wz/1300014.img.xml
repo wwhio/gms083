@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1300014.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="forself"/>
-      </imgdir>
-    </imgdir>
-    <int name="hideName" value="1"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="1" height="1">
-      <vector name="origin" x="0" y="0"/>
-      <int name="delay" value="120"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdkDFyhDAMRfs9hUZ9FpOkSAG7XcpUyQE8WIBmjJyxHbLcPmZhTaDxSP9bX8+urrfBwkg+sJMay7NCIGmcYelq/Pp8f3pDCFGL0dYJ1ThRwOvlVPHQGfYgekhi+aKUKl/PScTLCWDvsrTuLh+N0Hj+jqt1NFXWkxOiT0D7MRi1/Ult63wg22KRc4olaF2571jiGtOzoY9U5aByifg/cOCd/+HxkkbLqEOGhV82sZ9DoCfu+jiXmWikJrpHjPPcsSDc7nPTfG7sG58hq6cN7jnfqopl9x52q/4ARqmIIA==

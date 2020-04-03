@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2112008.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="juliet_dead"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="75" height="33">
-      <vector name="origin" x="33" y="32"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj0sOwjAMRPecwvIe+hOCRQM7TgBrFDWhNWodlIRCb0/4tBBWsWec8XO5vXct9No6MiwwW6QImiujiGuBh/1uvkZwXrKSrWEtcNAOt5tZSV2tyALLLoh5luVpul4EETczgNglPpmX/G+4ytLFf6x/M5304DhvA1D8DXrZXkN7vrak/VFpqTCZspJ32GftTxfVMc7zzBG0ktxLN7HAjZRvBK6WCI2muvECi+KL3uvKmzHIWKqJEe6vGRjCk49oZfJOjlG+1QM/jXVf

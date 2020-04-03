@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="tutorial_jp.img">
-  <imgdir name="back">
-    <canvas name="0" width="70" height="2121">
-      <vector name="origin" x="47" y="1060"/>
-      <int name="z" value="0"/>
-    </canvas>
-    <canvas name="1" width="319" height="423">
-      <vector name="origin" x="159" y="211"/>
-      <int name="z" value="0"/>
-    </canvas>
-    <canvas name="2" width="234" height="1606">
-      <vector name="origin" x="117" y="803"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNqtkcFugzAMhu99isj3ljgw2kqkvfUJtvOUQQRuIVSQsnZPPwsiqkqVNk27Wf5/+/9kZ/trU4vBdj21TgOuJAjr8rYgV2p4ez0sNyB6b1xh6tZZDTfbw363yKgpC+qEMw03/cW3HZn6/XhesQC7hRCPjg+Tn8Y2C7lxg+mDwHmfVPhKw5rLylJZeQ0KFQY7Dww25/1hgINKciCuGpI1iBtDy1RCNLvJ+WD9AjGY+jKmBD2LpvRnKDijxLi9syQq/hkFX7Yji0L8DxQ1o6g4uaNgKtNfsOB0l42M/8KSRdPn+Mlz9Q238JsG

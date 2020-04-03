@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1063015.img">
-  <imgdir name="info">
-    <int name="dcLeft" value="-50"/>
-    <int name="dcRight" value="50"/>
-    <int name="dcTop" value="-180"/>
-    <int name="dcBottom" value="-120"/>
-    <int name="hideName" value="1"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="1" height="1">
-      <vector name="origin" x="0" y="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNp1kMFuwjAMhu88heU7tAExcWhB4sAJcZjYA0RNaC21NmpDgbdf0tJ1aN0lcn5//uXfye5RldDauiHhFNUiRrCciSHOU/w6H+YbhMZpNroUtik+bYO77SyhKjdUA+vKiyr+WMVqvfAibmcA713ii3RyaLB7qSY72otDaHV589/5OsZoAvqkvBipf6CzXEcjtZmG9uKcVL+45RRXkLEnX/1wqoeSqM/0N153nSFfprnVzavjb3kn44pgAoUNSULZox5ubeZksJGacmKERzf3DO+wXdS7vq8xVt+Aq4OS

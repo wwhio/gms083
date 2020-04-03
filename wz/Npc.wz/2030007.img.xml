@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2030007.img">
-  <imgdir name="info">
-    <int name="dcLeft" value="-41"/>
-    <int name="dcTop" value="-50"/>
-    <int name="dcRight" value="42"/>
-    <int name="dcBottom" value="5"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="85" height="60">
-      <vector name="origin" x="42" y="53"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkM2ugjAQRvc+xWT2Sv1BXVBNXNyVqxt9gIZWmARmDPSivv2tgBIju/b7TmZOm+zvZQGNq2oS1jifKQTHqVjiTOP59DPdItTesDWFsNP4cDXud5OEysxSBWzKEC7UUim1mYUQdxOAz5b4Im38LNj3qU2P7uIRGlP8het0NcdoBDrJdWBiNcr8UpYPk1aLUegg3kv5puIOSqJO9du6ffRLOzXcmLpvwhfdyPpc4zZGyN1zu8a16uGANy718hokFWXECPdWDR5h9/JtGHWTP1WG0z89jHjl

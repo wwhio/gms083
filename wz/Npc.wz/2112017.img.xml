@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2112017.img">
-  <imgdir name="info">
-    <int name="dcLeft" value="-16"/>
-    <int name="dcRight" value="16"/>
-    <int name="dcTop" value="-16"/>
-    <int name="dcBottom" value="0"/>
-    <int name="hideName" value="1"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="1" height="1">
-      <vector name="origin" x="0" y="0"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNqFkMGOgkAMhu8+RdO7wnhQD6CJB0+bPRh9gAkzQhNoDcyy6tM7gMqSxXjr/P2m/f9Gm0uRQ23LioRjVLMQwXIihjiN8XjYTVcIldNsdC5sY7zaCjfrSURFaqgE1oUX50rNQ7WceRHXE4Bhl/gkrdw02D1Uk3zZk0Oodf7jn1O1wGAE2lOa9dQb6CDnj4O24pwULywcgTIy9ttX/boOioIuz/9o7WWe2RLNta4eHX/HXzIua4ZAZpsUTdmhHq5t4uQ5RkpKiREu7b/rH3cDf7cR90G3dWizr+6Mzos6

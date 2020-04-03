@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1043000.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="bush1"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="83" height="59">
-      <vector name="origin" x="41" y="59"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj0EOgjAQRfecYjJ7oURNNLG48wR6gAoVJoGpaSvq7a0oaNnN/Nf+vu72j66FXltHhiXmqUDQXJqKuJZ4Oh4WGwTnFVeqNawlPrXDfZHsqKsrssCqC2EuVkshRBpCLBKAmBJfzBDPgSstXf0XzaGY8kCct0Eovga9am9hPd9ck2M2tWSfmu+Df1s0xyLvD46KpeJeuckC7lT5RuJmidBoqhsvcb39Sfe69GYsMpZqYoSHxFWO8ByOZqPKpzlW+U0vy5By0Q==

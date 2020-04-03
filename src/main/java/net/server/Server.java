@@ -53,7 +53,7 @@ import net.server.guild.MapleGuild;
 import net.server.guild.MapleGuildCharacter;
 import net.server.task.*;
 import net.server.world.World;
-import net.vertx.ChannelVerticle;
+import net.vertx.ServerVerticle;
 import org.apache.mina.core.service.IoAcceptor;
 import org.shaofan.ms4x.common.net.crypto.MapleCrypto;
 import server.CashShop.CashItemFactory;
@@ -914,7 +914,7 @@ public class Server {
         System.out.println();
 
         Vertx vertx = Vertx.vertx();
-        vertx.deployVerticle(ChannelVerticle.class.getName(), new DeploymentOptions().setConfig(new JsonObject().put("port", 8484).put("world", -1).put("channel", -1)));
+        vertx.deployVerticle(ServerVerticle.class.getName(), new DeploymentOptions().setConfig(new JsonObject().put("port", 8484).put("world", -1).put("channel", -1)));
 
         System.out.println("Listening on port 8484\r\n\r\n");
 
@@ -955,7 +955,7 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        System.setProperty("wzpath", "/Users/shaofan/Desktop/wz");
+        System.setProperty("wzpath", "wz");
         Security.setProperty("crypto.policy", "unlimited");
         AutoJCE.removeCryptographyRestrictions();
         Server.getInstance().init();

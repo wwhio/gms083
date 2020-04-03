@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1031001.img">
-  <imgdir name="info">
-    <imgdir name="speak">
-      <string name="0" value="n0"/>
-      <string name="1" value="n1"/>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="53" height="63">
-      <vector name="origin" x="26" y="63"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptj80OgjAQhO8+xWbvaivReKB68wn0ARqosBG2hlb8eXorghXjbTIz2fk23d7qClrTOLKsUM4EguHM5sSFwsN+N10jOK8515Vlo/BuHG43k5TqIqcGWNfBlCKRQshZMHEzARinxEfb2b+BOxt96pOQOd+E1T4LHK2uLkGxwPn/jowdOXTS+Xuiw/jW4+XXRwNTprnVLu5eKfelwmWCUBoqSq9wlUTM1mTeDodsQwUxwk3hYoVw76oRl9j3xceHVUTU9/IYNaonAw52ew==

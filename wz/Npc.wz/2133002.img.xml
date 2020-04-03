@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2133002.img">
-  <imgdir name="info">
-    <string name="name" value="엘린숲 이정표"/>
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="party6_giveUp"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="113" height="165">
-      <vector name="origin" x="56" y="163"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdULFOwzAQ3fsVp9tpkkaNGJp26xfQGVmJSU5K7Mg2oeELWBkQDCAxMSPEXxH+AYc6ad3FunvP9967W232dQUtV5qkSDGahwhcZDInUaS4u9peXCJow0TOKil4ih3XuFnPVlQXOSkQrLbgIorjMFzMLYjrGYDPkriR/7AltFFW2RHDi9Cy6tY2/fPLz8dn//AF/dt3//70+/iKgZvy5HSmqDFO8JwMJ/zczI2Ndg1TpkuuC2r5rhmN7ExwkHPGJ51X+4GG84wLZky0TE9p4I5yU9rDRjFCyakojW2S5TF+yzMjRympqCCBsE9xmSB0w9/4JB0J437eT5uE05mCg7mf9lj9AXnwlp0=

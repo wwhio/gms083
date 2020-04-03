@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2073000.img">
-  <imgdir name="info">
-    <imgdir name="speak">
-      <string name="0" value="n0"/>
-      <string name="1" value="n1"/>
-    </imgdir>
-    <string name="link" value="2071000"/>
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="watermelon_out"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNptUEsOgjAU3HOKpnuh1YUuQHaeQNemgUoa4JW0BfX2vmihlLibN5/MtHn56jsySWOVhoLylFEiodK1gqagt+tld6LEOgG16DTIgr6lpeU5yVXf1MoQED2Se3Y8MMZSJOk5ISRWFTz0l94KdpCi9Qpq1hls9RrumEQ3IgJGs/8eHjx89uTZr8Jfkb9T0C4R3Mxx85KLl1VGDS5Mi0S28NsCH5srnsJJ00v8uLse3eoV8cbVFXBAH6vJero=

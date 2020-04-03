@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1204005.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="downTrue"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="61" height="71">
-      <vector name="origin" x="30" y="71"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj0uSwjAMRPecQqX9EIfht4hhNyeAA7hik6gqkSnbBJjTYyAfzE7qllpPxf7WNtAZ58myxHwuEAyXVhNXEo+Hv58tgg+KtWosG4l343G/mxXUVpocsGqjmC/EUojVPIq4mwGkLvHJvuRvw5eOzqG3vk0x6tHxwUWgdA061Vxiq+2VD+5iMBuDsndSf/OjS+qU5fnjQFkq7pQfQeBKOtQS1zlCbaiqg8RNPnF3pgx2CLKOKmKEm8TfuHp/jU5oxKEf/B8/EINfZO/LKepUPQCXRnyg

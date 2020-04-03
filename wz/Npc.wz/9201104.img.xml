@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9201104.img">
-  <imgdir name="info">
-    <imgdir name="speak">
-    </imgdir>
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="Masteria_Sage01"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="146" height="162">
-      <vector name="origin" x="75" y="167"/>
-      <int name="delay" value="2000"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkEFvwjAMhe/8Csv30bRisEkt3Hbbadt5spqstWgdlGQd/fcLgxaCdrPfe3E+u9wd+w4G4zxbqTBfKgQjtdUsTYUf7y8PTwg+kGjqrJgKR+Nxt12U3DeaHQj1UXwuVJ6r1TKKuF0ApC7Ll/2T7w1/MLSfnOxs/ZurHR/CJXhvqlmPjg8ugqfPYKDuO7av5INxTJ9v1BiVYzbPS7++6ZI6RTqdZEKvSQbyMw/8sA5tPOZqjdAabtoQm3VxXWAwdbDTKOu4YUE4Vrh5RBhP2c0NHUu4JLXpaJz3KZRSU6zMzgwp9LX6BaBMjRM=

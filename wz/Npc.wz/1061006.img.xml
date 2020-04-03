@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1061006.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="flower_in"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="87" height="66">
-      <vector name="origin" x="43" y="66"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdj0EOgjAQRfeeYjJ7pUSDLqzuPIGuTQMFJoGpaSvK7a0IaN3N/Nf+vu6Pz7aBTltHhiWmK4GgOTcFcSXxcj4tdwjOKy5UY1hL7LXD42Gxp7YqyAKrNoSpyFIhslUI8bAAiClxaYb4H7jc0s2P6B+KOQ/EeRuE4mvQqeYe1rIxD22vxJjMTcmnanz0Z4vmWOb9yUkzV9wpN5vAgwpfS9xtEWpNVe0lZtlXvNO5N1ORsVQFGXhK3KwR+uFoMql8mmOV7/QCO7p0uw==

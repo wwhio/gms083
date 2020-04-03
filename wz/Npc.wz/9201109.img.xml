@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9201109.img">
-  <imgdir name="info">
-    <imgdir name="speak">
-    </imgdir>
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="glpqstatue2"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="160" height="202">
-      <vector name="origin" x="80" y="199"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkE1SwzAMhfc9hUZ7GicLppmJ2x0ngAN4EuNoSORgu6Hl9AjapHWHnfQ+/TypOZzGAWYbInnWWG4VguXWd8RO49vry9MOISbDnRk8W41nG/Gw3zQ0uo4CsBlFrCtVlqreioj7DUBOid/9n/wI4mTNx0KKC/q3rg00pWvhI1SrLiSmIMbzNpjNcJTUDdOnXJKOtsJinZWvvcuyOLfz+47Fdmt4NnH1Al/UpV4e+Sxxb8n1SWOlqpv52bbJL6N8IEeMcNK4k4azNNb1nTvidK38Xu9QC2+Ky/Lc7S36AbL2ie8=

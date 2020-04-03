@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="1101000.img">
-  <imgdir name="info">
-    <canvas name="default" width="129" height="86">
-      <vector name="origin" x="64" y="86"/>
-      <int name="z" value="0"/>
-    </canvas>
-    <int name="dcLeft" value="-63"/>
-    <int name="dcTop" value="-83"/>
-    <int name="dcRight" value="64"/>
-    <int name="dcBottom" value="0"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="1" height="60">
-      <vector name="origin" x="0" y="61"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNqFkc1ugzAQhO95itXeE+y2QlTCidRDTj1V6QNY2MBKsI7AIUmfvi4huD9Iva13vlmNxvnu0jYw2K4nxwrlRiBYLpwhrhS+H/brDKH3mo1uHFuFV9vjbrvKqa0MdcC6DUsphRRCbMIStyuAnypx6cZ1EArNg+4nwdhSnxqPcCbj63Dm4RmhtlTVXmGWTp7gGmzh3f2c66giRrgoTJ8QriOazCyxn8APhEE3pzCJu54ntwDTK7KmeLWlnw3r9HG2fIcO7hiZbJl5+8o/UyHiEvTivHft74B5civub4fjFyyWKGJ9sbxU/F+eGLtL5VI3MUicPgFP4J/w

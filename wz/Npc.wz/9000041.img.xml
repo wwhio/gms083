@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9000041.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="Donation"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="62" height="111">
-      <vector name="origin" x="30" y="111"/>
-      <int name="z" value="0"/>
-      <int name="delay" value="1200"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkEFuwyAQRfc5xWj2jSGtqlYyyabqCZoDIEPtkeyhAurGOX1I7eASldXM/5/hDfXhNPQwWh/IsUK5FQiWG2eIW4XHj/eHF4QQNRvdO7YKJxvwsN/UNLSGPLAekvgq0nmS2yTifgNQusSf7le+N0Lj6Ssu1r0psp6cEH0CKq/BqPvv1L451jHRY5UHVfOk5c0/XVGXLNcdb5SN5lGHDAI/ZGKn8HmH0Flqu5h+SsoVfLRNdLdJzlNLjHBS+JjuTnN2hSOOS/KcdxD/+sb2esoZuRM5VlczYrnTWl0ALoGHbQ==

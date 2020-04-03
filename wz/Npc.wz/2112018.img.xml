@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2112018.img">
-  <imgdir name="stand">
-    <canvas name="0" width="85" height="79">
-      <vector name="origin" x="44" y="78"/>
-      <int name="delay" value="5000"/>
-    </canvas>
-  </imgdir>
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="rnj_start"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-</imgdir>
+eNplkMFugzAMhu99Csv3lVC1GpNIe9sTdOcpIhl4AqdKUlbefhYFWrab/f+/nS8uT7euhd6FSJ415luF4LjylrjW+HF+fykQYjJsTevZaRxcxNNxU1JXWwrAphNxl+c7lRdbEfG4AVi74/ioi1MZ7k2cHHnsh2xqNBYHhMZR3SSNr29TWOK9q5KfF/lANTHCTeN+jzBItMBsyRKnKWhdawaE3rRX6Q5KqTlWZneAkTK7Y/4nJv7yM/D6K1WgS3rgrUy16OLEFOSE67EZKPD3pxwlpCf4J5Y/ZEv9qH4Bcgh/Zg==

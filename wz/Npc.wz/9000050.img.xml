@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="9000050.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="pinokio_npc"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="111" height="152">
-      <vector name="origin" x="55" y="150"/>
-      <int name="z" value="0"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdkE2OwjAMhfecwvIemiJVYqQWdpxgWKMoDa01rVMlmfJz+gnTNhCyst9z7M8uD7e+g1FbR4YrzDcCQbMyNXFT4en7uN4hOC+5lp1hXeFdOzzsVyX1TU0WWPZB/BLhFWITRNyvAFKX+GL+5U/DKUuDn61PU0Q9OM7bAJR+g1F2vyEdiM0PmTMPCrPYK5uazWPfsiROcZ5rLqBK8ihdZIEr1b4NB8pzhFZT0/qQFNsX/KiVN0srY6khRrhVWBQI92eteKMj9nPlI+4R/TKbhqe0r+gP1QF+dA==

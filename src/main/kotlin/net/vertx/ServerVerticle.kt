@@ -3,7 +3,7 @@ package net.vertx
 import io.vertx.core.AbstractVerticle
 import net.PacketProcessor
 
-class ChannelVerticle : AbstractVerticle() {
+class ServerVerticle : AbstractVerticle() {
     override fun start() {
         val config = config()
 

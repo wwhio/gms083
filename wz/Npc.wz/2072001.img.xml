@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2072001.img">
-  <imgdir name="info">
-    <int name="dcLeft" value="-63"/>
-    <int name="dcTop" value="-66"/>
-    <int name="dcRight" value="74"/>
-    <int name="dcBottom" value="0"/>
-    <int name="hideName" value="1"/>
-    <int name="talkMouseOnly" value="1"/>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="137" height="67">
-      <vector name="origin" x="63" y="67"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNptkM1ugzAQhO95itXeEyBU0AMkUg899Ueq0gewsAOrmHWFHRrevg6BpGl92535NNqdYntqNfSqs2S4xGQVIyiujCSuS/zcPS8fEawTLIU2rEoclMXtZlFQW0vqgEXrxXWcr+M4WXkRNwuAe5d4b0b5bLCbVFm9qL1D6IU++nWZpRgFoJ35+sVkQeaD6uaWlD8EoSfjnGmvVByAGpLqzU9XKAlATujDqzla9c56+EsW0eXz/yWMHc4tVIJ7YSfHN/5N0jU+JM0RGnX+psQsn2jP96pyZk4yHdXECCfPpAjDiM53Rpfo+1tu0w+zF5D9

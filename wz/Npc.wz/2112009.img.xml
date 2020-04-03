@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<imgdir name="2112009.img">
-  <imgdir name="info">
-    <imgdir name="script">
-      <imgdir name="0">
-        <string name="script" value="romio_dead"/>
-      </imgdir>
-    </imgdir>
-  </imgdir>
-  <imgdir name="stand">
-    <canvas name="0" width="72" height="38">
-      <vector name="origin" x="26" y="38"/>
-    </canvas>
-  </imgdir>
-</imgdir>
+eNpdkEsOwjAMRPecwvIe+kHiI5Gy4wSwRlETWkutg5JQ6O0JhRbCzp6xxy/Z7R9tA522jgwLzBYpgubSKOJK4Ol4mG8QnJesZGNYC+y1w30x21FbKbLAsg1inmV5mm4XQcRiBhC7xBczyP+GKy1d/cf6N9NJD47zNgDFa9DJ5hZaa1oyZ6WlwmSKSt5Zn6s/XVTHNK9Xjpyl5E66CQXupHwtcJ0j1Jqq2gtcbr7knS69GYOMpYoY4RE+ZoXQD6PJiPJOjlG+1RO0ynUD
