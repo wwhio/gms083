@@ -37,6 +37,7 @@ import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -45,11 +46,11 @@ public class XMLDomMapleData implements MapleData {
     private Node node;
     private File imageDataDir;
 
-    public XMLDomMapleData(FileInputStream fis, File imageDataDir) {
+    public XMLDomMapleData(InputStream is, File imageDataDir) {
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-            Document document = documentBuilder.parse(fis);
+            Document document = documentBuilder.parse(is);
             this.node = document.getFirstChild();
         } catch (ParserConfigurationException e) {
             throw new RuntimeException(e);

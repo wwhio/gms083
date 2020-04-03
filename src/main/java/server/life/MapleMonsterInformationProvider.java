@@ -271,7 +271,7 @@ public class MapleMonsterInformationProvider {
     }
 
     public static ArrayList<Pair<Integer, String>> getMobsIDsFromName(String search) {
-        MapleDataProvider dataProvider = MapleDataProviderFactory.getDataProvider(new File("wz/String.wz"));
+        MapleDataProvider dataProvider = MapleDataProviderFactory.getDataProvider(MapleDataProviderFactory.fileInWZPath("String.wz"));
         ArrayList<Pair<Integer, String>> retMobs = new ArrayList<Pair<Integer, String>>();
         MapleData data = dataProvider.getData("Mob.img");
         List<Pair<Integer, String>> mobPairList = new LinkedList<Pair<Integer, String>>();
@@ -311,7 +311,7 @@ public class MapleMonsterInformationProvider {
     public String getMobNameFromId(int id) {
         String mobName = mobNameCache.get(id);
         if (mobName == null) {
-            MapleDataProvider dataProvider = MapleDataProviderFactory.getDataProvider(new File("wz/String.wz"));
+            MapleDataProvider dataProvider = MapleDataProviderFactory.getDataProvider(MapleDataProviderFactory.fileInWZPath("String.wz"));
             MapleData mobData = dataProvider.getData("Mob.img");
 
             mobName = MapleDataTool.getString(mobData.getChildByPath(id + "/name"), "");

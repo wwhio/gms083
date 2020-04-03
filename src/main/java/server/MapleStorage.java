@@ -317,7 +317,7 @@ public class MapleStorage {
         if (fee == null) {
             fee = 100;
 
-            MapleDataProvider npc = MapleDataProviderFactory.getDataProvider(new File("wz/Npc.wz"));
+            MapleDataProvider npc = MapleDataProviderFactory.getDataProvider(MapleDataProviderFactory.fileInWZPath("Npc.wz"));
             MapleData npcData = npc.getData(npcId + ".img");
             if (npcData != null) {
                 fee = MapleDataTool.getIntConvert("info/trunkPut", npcData, 100);
@@ -335,7 +335,7 @@ public class MapleStorage {
         if (fee == null) {
             fee = 0;
 
-            MapleDataProvider npc = MapleDataProviderFactory.getDataProvider(new File("wz/Npc.wz"));
+            MapleDataProvider npc = MapleDataProviderFactory.getDataProvider(MapleDataProviderFactory.fileInWZPath("Npc.wz"));
             MapleData npcData = npc.getData(npcId + ".img");
             if (npcData != null) {
                 fee = MapleDataTool.getIntConvert("info/trunkGet", npcData, 0);

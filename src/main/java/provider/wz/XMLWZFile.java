@@ -21,14 +21,18 @@
 */
 package provider.wz;
 
+import cn.hutool.core.io.FileUtil;
 import provider.MapleData;
 import provider.MapleDataDirectoryEntry;
 import provider.MapleDataProvider;
+import tools.DeflaterUtils;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Objects;
 
 public class XMLWZFile implements MapleDataProvider {
     private File root;
@@ -60,18 +64,15 @@ public class XMLWZFile implements MapleDataProvider {
         if (!dataFile.exists()) {
             return null;//bitches
         }
-        FileInputStream fis;
-        try {
-            fis = new FileInputStream(dataFile);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException("Datafile " + path + " does not exist in " + root.getAbsolutePath());
-        }
+        InputStream is;
+        String fileStr = FileUtil.readUtf8String(dataFile);
+        is = new ByteArrayInputStream(Objects.requireNonNull(DeflaterUtils.unzipString(fileStr)).getBytes(StandardCharsets.UTF_8));
         final XMLDomMapleData domMapleData;
         try {
-            domMapleData = new XMLDomMapleData(fis, imageDataDir.getParentFile());
+            domMapleData = new XMLDomMapleData(is, imageDataDir.getParentFile());
         } finally {
             try {
-                fis.close();
+                is.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
