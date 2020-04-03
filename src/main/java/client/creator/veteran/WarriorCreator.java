@@ -65,12 +65,12 @@ public class WarriorCreator extends CharacterFactory {
             recipe.setRemainingSp(recipe.getRemainingSp() - improveSp);
 
             int toUseSp = 5;
-            Skill improveHpRec = SkillFactory.INSTANCE.getSkill(Warrior.IMPROVED_HPREC);
+            Skill improveHpRec = SkillFactory.getSkill(Warrior.IMPROVED_HPREC);
             recipe.addStartingSkillLevel(improveHpRec, toUseSp);
             improveSp -= toUseSp;
 
             if (improveSp > 0) {
-                Skill improveMaxHp = SkillFactory.INSTANCE.getSkill(Warrior.IMPROVED_MAXHP);
+                Skill improveMaxHp = SkillFactory.getSkill(Warrior.IMPROVED_MAXHP);
                 recipe.addStartingSkillLevel(improveMaxHp, improveSp);
             }
         }

@@ -932,7 +932,7 @@ public class AbstractPlayerInteraction {
     }
 
     public void teachSkill(int skillid, byte level, byte masterLevel, long expiration, boolean force) {
-        Skill skill = SkillFactory.INSTANCE.getSkill(skillid);
+        Skill skill = SkillFactory.getSkill(skillid);
         MapleCharacter.SkillEntry skillEntry = getPlayer().getSkills().get(skill);
         if (skillEntry != null) {
             if (!force && level > -1) {

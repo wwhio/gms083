@@ -55,7 +55,7 @@ public class DatabaseConnection {
         }
     }
 
-    public DatabaseConnection() {
+    public static void initDatabaseConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver"); // touch the mysql driver
         } catch (ClassNotFoundException e) {

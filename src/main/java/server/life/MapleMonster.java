@@ -1213,11 +1213,11 @@ public class MapleMonster extends AbstractLoadedMapleLife {
             if (from.getJob() == MapleJob.NIGHTLORD || from.getJob() == MapleJob.SHADOWER || from.getJob().isA(MapleJob.NIGHTWALKER3)) {
                 int poisonLevel, matk, jobid = from.getJob().getId();
                 int skillid = (jobid == 412 ? NightLord.VENOMOUS_STAR : (jobid == 422 ? Shadower.VENOMOUS_STAB : NightWalker.VENOM));
-                poisonLevel = from.getSkillLevel(SkillFactory.INSTANCE.getSkill(skillid));
+                poisonLevel = from.getSkillLevel(SkillFactory.getSkill(skillid));
                 if (poisonLevel <= 0) {
                     return false;
                 }
-                matk = SkillFactory.INSTANCE.getSkill(skillid).getEffect(poisonLevel).getMatk();
+                matk = SkillFactory.getSkill(skillid).getEffect(poisonLevel).getMatk();
                 int luk = from.getLuk();
                 int maxDmg = (int) Math.ceil(Math.min(Short.MAX_VALUE, 0.2 * luk * matk));
                 int minDmg = (int) Math.ceil(Math.min(Short.MAX_VALUE, 0.1 * luk * matk));
@@ -1249,7 +1249,7 @@ public class MapleMonster extends AbstractLoadedMapleLife {
             overtimeDelay = 3500;
             */
         } else if (status.getSkill().getId() == 4121004 || status.getSkill().getId() == 4221004) { // Ninja Ambush
-            final Skill skill = SkillFactory.INSTANCE.getSkill(status.getSkill().getId());
+            final Skill skill = SkillFactory.getSkill(status.getSkill().getId());
             final byte level = from.getSkillLevel(skill);
             final int damage = (int) ((from.getStr() + from.getLuk()) * ((3.7 * skill.getEffect(level).getDamage()) / 100));
 

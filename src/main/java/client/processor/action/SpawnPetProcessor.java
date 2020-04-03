@@ -70,7 +70,7 @@ public class SpawnPetProcessor {
                 if (chr.getPetIndex(pet) != -1) {
                     chr.unequipPet(pet, true);
                 } else {
-                    if (chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(8)) == 0 && chr.getPet(0) != null) {
+                    if (chr.getSkillLevel(SkillFactory.getSkill(8)) == 0 && chr.getPet(0) != null) {
                         chr.unequipPet(chr.getPet(0), false);
                     }
                     if (lead) {

@@ -43,7 +43,7 @@ public class BuffCommand extends Command {
         }
         int skillid = Integer.parseInt(params[0]);
 
-        Skill skill = SkillFactory.INSTANCE.getSkill(skillid);
+        Skill skill = SkillFactory.getSkill(skillid);
         if (skill != null) skill.getEffect(skill.getMaxLevel()).applyTo(player);
     }
 }

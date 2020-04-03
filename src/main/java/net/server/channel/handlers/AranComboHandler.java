@@ -34,7 +34,7 @@ public class AranComboHandler extends AbstractMaplePacketHandler {
     @Override
     public void handlePacket(SeekableLittleEndianAccessor slea, MapleClient c) {
         final MapleCharacter player = c.getPlayer();
-        int skillLevel = player.getSkillLevel(SkillFactory.INSTANCE.getSkill(Aran.COMBO_ABILITY));
+        int skillLevel = player.getSkillLevel(SkillFactory.getSkill(Aran.COMBO_ABILITY));
         if (GameConstants.isAran(player.getJob().getId()) && (skillLevel > 0 || player.getJob().getId() == 2000)) {
             final long currentTime = currentServerTime();
             short combo = player.getCombo();
@@ -54,7 +54,7 @@ public class AranComboHandler extends AbstractMaplePacketHandler {
                 case 90:
                 case 100:
                     if (player.getJob().getId() != 2000 && (combo / 10) > skillLevel) break;
-                    SkillFactory.INSTANCE.getSkill(Aran.COMBO_ABILITY).getEffect(combo / 10).applyComboBuff(player, combo);
+                    SkillFactory.getSkill(Aran.COMBO_ABILITY).getEffect(combo / 10).applyComboBuff(player, combo);
                     break;
             }
             player.setCombo(combo);

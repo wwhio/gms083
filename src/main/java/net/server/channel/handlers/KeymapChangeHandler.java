@@ -43,7 +43,7 @@ public final class KeymapChangeHandler extends AbstractMaplePacketHandler {
                     int action = slea.readInt();
 
                     if (type == 1) {
-                        Skill skill = SkillFactory.INSTANCE.getSkill(action);
+                        Skill skill = SkillFactory.getSkill(action);
                         boolean isBanndedSkill;
                         if (skill != null) {
                             isBanndedSkill = GameConstants.bannedBindSkills(skill.getId());

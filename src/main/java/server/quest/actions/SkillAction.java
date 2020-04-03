@@ -73,7 +73,7 @@ public class SkillAction extends MapleQuestAction {
     @Override
     public void run(MapleCharacter chr, Integer extSelection) {
         for (SkillData skill : skillData.values()) {
-            Skill skillObject = SkillFactory.INSTANCE.getSkill(skill.getId());
+            Skill skillObject = SkillFactory.getSkill(skill.getId());
             if (skillObject == null) continue;
 
             boolean shouldLearn = false;

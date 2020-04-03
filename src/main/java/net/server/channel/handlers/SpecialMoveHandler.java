@@ -56,7 +56,7 @@ public final class SpecialMoveHandler extends AbstractMaplePacketHandler {
 
         Point pos = null;
         int __skillLevel = slea.readByte();
-        Skill skill = SkillFactory.INSTANCE.getSkill(skillid);
+        Skill skill = SkillFactory.getSkill(skillid);
         int skillLevel = chr.getSkillLevel(skill);
         if (skillid % 10000000 == 1010 || skillid % 10000000 == 1011) {
             if (chr.getDojoEnergy() < 10000) { // PE hacking or maybe just lagging
@@ -106,7 +106,7 @@ public final class SpecialMoveHandler extends AbstractMaplePacketHandler {
             c.announce(MaplePacketCreator.enableActions());
             return;
         } else if (skillid == Brawler.MP_RECOVERY) {// MP Recovery
-            Skill s = SkillFactory.INSTANCE.getSkill(skillid);
+            Skill s = SkillFactory.getSkill(skillid);
             MapleStatEffect ef = s.getEffect(chr.getSkillLevel(s));
 
             int lose = chr.safeAddHP(-1 * (chr.getCurrentMaxHp() / ef.getX()));

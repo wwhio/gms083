@@ -629,7 +629,7 @@ public class AssignAPProcessor {
 
         if (job.isA(MapleJob.WARRIOR) || job.isA(MapleJob.DAWNWARRIOR1)) {
             if (!usedAPReset) {
-                Skill increaseHP = SkillFactory.INSTANCE.getSkill(job.isA(MapleJob.DAWNWARRIOR1) ? DawnWarrior.MAX_HP_INCREASE : Warrior.IMPROVED_MAXHP);
+                Skill increaseHP = SkillFactory.getSkill(job.isA(MapleJob.DAWNWARRIOR1) ? DawnWarrior.MAX_HP_INCREASE : Warrior.IMPROVED_MAXHP);
                 int sLvl = player.getSkillLevel(increaseHP);
 
                 if (sLvl > 0)
@@ -687,7 +687,7 @@ public class AssignAPProcessor {
             }
         } else if (job.isA(MapleJob.PIRATE) || job.isA(MapleJob.THUNDERBREAKER1)) {
             if (!usedAPReset) {
-                Skill increaseHP = SkillFactory.INSTANCE.getSkill(job.isA(MapleJob.PIRATE) ? Brawler.IMPROVE_MAX_HP : ThunderBreaker.IMPROVE_MAX_HP);
+                Skill increaseHP = SkillFactory.getSkill(job.isA(MapleJob.PIRATE) ? Brawler.IMPROVE_MAX_HP : ThunderBreaker.IMPROVE_MAX_HP);
                 int sLvl = player.getSkillLevel(increaseHP);
 
                 if (sLvl > 0)
@@ -732,7 +732,7 @@ public class AssignAPProcessor {
             }
         } else if (job.isA(MapleJob.MAGICIAN) || job.isA(MapleJob.BLAZEWIZARD1)) {
             if (!usedAPReset) {
-                Skill increaseMP = SkillFactory.INSTANCE.getSkill(job.isA(MapleJob.BLAZEWIZARD1) ? BlazeWizard.INCREASING_MAX_MP : Magician.IMPROVED_MAX_MP_INCREASE);
+                Skill increaseMP = SkillFactory.getSkill(job.isA(MapleJob.BLAZEWIZARD1) ? BlazeWizard.INCREASING_MAX_MP : Magician.IMPROVED_MAX_MP_INCREASE);
                 int sLvl = player.getSkillLevel(increaseMP);
 
                 if (sLvl > 0)

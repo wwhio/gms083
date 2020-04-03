@@ -148,8 +148,8 @@ public final class UseCashItemHandler extends AbstractMaplePacketHandler {
                 }
 
                 int SPFrom = slea.readInt();
-                Skill skillSPTo = SkillFactory.INSTANCE.getSkill(SPTo);
-                Skill skillSPFrom = SkillFactory.INSTANCE.getSkill(SPFrom);
+                Skill skillSPTo = SkillFactory.getSkill(SPTo);
+                Skill skillSPFrom = SkillFactory.getSkill(SPFrom);
                 byte curLevel = player.getSkillLevel(skillSPTo);
                 byte curLevelSPFrom = player.getSkillLevel(skillSPFrom);
                 if ((curLevel < skillSPTo.getMaxLevel()) && curLevelSPFrom > 0) {

@@ -40,7 +40,7 @@ public class MapleSummon extends AbstractAnimatedMapleMapObject {
     public MapleSummon(MapleCharacter owner, int skill, Point pos, SummonMovementType movementType) {
         this.owner = owner;
         this.skill = skill;
-        this.skillLevel = owner.getSkillLevel(SkillFactory.INSTANCE.getSkill(skill));
+        this.skillLevel = owner.getSkillLevel(SkillFactory.getSkill(skill));
         if (skillLevel == 0) throw new RuntimeException();
 
         this.movementType = movementType;

@@ -833,6 +833,8 @@ public class Server {
 
         MapleCrypto.Companion.initialize(ServerConstants.VERSION);
 
+        DatabaseConnection.initDatabaseConnection();
+
         if (YamlConfig.config.server.SHUTDOWNHOOK)
             Runtime.getRuntime().addShutdownHook(new Thread(shutdown(false)));
 
@@ -865,7 +867,7 @@ public class Server {
         initializeTimelyTasks();    // aggregated method for timely tasks thanks to lxconan
 
         long timeToTake = System.currentTimeMillis();
-        SkillFactory.INSTANCE.loadAllSkills();
+        SkillFactory.loadAllSkills();
         System.out.println("Skills loaded in " + ((System.currentTimeMillis() - timeToTake) / 1000.0) + " seconds");
 
         timeToTake = System.currentTimeMillis();

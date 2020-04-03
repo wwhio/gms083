@@ -75,15 +75,15 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
                 int orbcount = chr.getBuffedValue(MapleBuffStat.COMBO);
                 int oid = chr.isCygnus() ? DawnWarrior.COMBO : Crusader.COMBO;
                 int advcomboid = chr.isCygnus() ? DawnWarrior.ADVANCED_COMBO : Hero.ADVANCED_COMBO;
-                Skill combo = SkillFactory.INSTANCE.getSkill(oid);
-                Skill advcombo = SkillFactory.INSTANCE.getSkill(advcomboid);
+                Skill combo = SkillFactory.getSkill(oid);
+                Skill advcombo = SkillFactory.getSkill(advcomboid);
                 MapleStatEffect ceffect;
                 int advComboSkillLevel = chr.getSkillLevel(advcombo);
                 if (advComboSkillLevel > 0) {
                     ceffect = advcombo.getEffect(advComboSkillLevel);
                 } else {
                     int comboLv = chr.getSkillLevel(combo);
-                    if (comboLv <= 0 || chr.isGM()) comboLv = SkillFactory.INSTANCE.getSkill(oid).getMaxLevel();
+                    if (comboLv <= 0 || chr.isGM()) comboLv = SkillFactory.getSkill(oid).getMaxLevel();
 
                     if (comboLv > 0) ceffect = combo.getEffect(comboLv);
                     else ceffect = null;
@@ -98,7 +98,7 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
                         }
 
                         int olv = chr.getSkillLevel(oid);
-                        if (olv <= 0) olv = SkillFactory.INSTANCE.getSkill(oid).getMaxLevel();
+                        if (olv <= 0) olv = SkillFactory.getSkill(oid).getMaxLevel();
 
                         int duration = combo.getEffect(olv).getDuration();
                         List<Pair<MapleBuffStat, Integer>> stat = Collections.singletonList(new Pair<>(MapleBuffStat.COMBO, neworbcount));
@@ -108,7 +108,7 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
                         chr.getMap().broadcastMessage(chr, MaplePacketCreator.giveForeignBuff(chr.getId(), stat), false);
                     }
                 }
-            } else if (chr.getSkillLevel(chr.isCygnus() ? SkillFactory.INSTANCE.getSkill(15100004) : SkillFactory.INSTANCE.getSkill(5110001)) > 0 && (chr.getJob().isA(MapleJob.MARAUDER) || chr.getJob().isA(MapleJob.THUNDERBREAKER2))) {
+            } else if (chr.getSkillLevel(chr.isCygnus() ? SkillFactory.getSkill(15100004) : SkillFactory.getSkill(5110001)) > 0 && (chr.getJob().isA(MapleJob.MARAUDER) || chr.getJob().isA(MapleJob.THUNDERBREAKER2))) {
                 for (int i = 0; i < attack.numAttacked; i++) {
                     chr.handleEnergyChargeGain();
                 }
@@ -125,9 +125,9 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
         }
         if (attack.numAttacked > 0 && attack.skill == 1211002) {
             boolean advcharge_prob = false;
-            int advcharge_level = chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(1220010));
+            int advcharge_level = chr.getSkillLevel(SkillFactory.getSkill(1220010));
             if (advcharge_level > 0) {
-                advcharge_prob = SkillFactory.INSTANCE.getSkill(1220010).getEffect(advcharge_level).makeChanceResult();
+                advcharge_prob = SkillFactory.getSkill(1220010).getEffect(advcharge_level).makeChanceResult();
             }
             if (!advcharge_prob) {
                 chr.cancelEffectFromBuffStat(MapleBuffStat.WK_CHARGE);
@@ -149,7 +149,7 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
             c.announce(MaplePacketCreator.getEnergy("energy", chr.getDojoEnergy()));
             c.announce(MaplePacketCreator.serverNotice(5, "As you used the secret skill, your energy bar has been reset."));
         } else if (attack.skill > 0) {
-            Skill skill = SkillFactory.INSTANCE.getSkill(attack.skill);
+            Skill skill = SkillFactory.getSkill(attack.skill);
             MapleStatEffect effect_ = skill.getEffect(chr.getSkillLevel(skill));
             if (effect_.getCooldown() > 0) {
                 if (chr.skillIsCooling(attack.skill)) {
@@ -160,10 +160,10 @@ public final class CloseRangeDamageHandler extends AbstractDealDamageHandler {
                 }
             }
         }
-        if ((chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(NightWalker.VANISH)) > 0 || chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(Rogue.DARK_SIGHT)) > 0) && chr.getBuffedValue(MapleBuffStat.DARKSIGHT) != null) {// && chr.getBuffSource(MapleBuffStat.DARKSIGHT) != 9101004
+        if ((chr.getSkillLevel(SkillFactory.getSkill(NightWalker.VANISH)) > 0 || chr.getSkillLevel(SkillFactory.getSkill(Rogue.DARK_SIGHT)) > 0) && chr.getBuffedValue(MapleBuffStat.DARKSIGHT) != null) {// && chr.getBuffSource(MapleBuffStat.DARKSIGHT) != 9101004
             chr.cancelEffectFromBuffStat(MapleBuffStat.DARKSIGHT);
             chr.cancelBuffStats(MapleBuffStat.DARKSIGHT);
-        } else if (chr.getSkillLevel(SkillFactory.INSTANCE.getSkill(WindArcher.WIND_WALK)) > 0 && chr.getBuffedValue(MapleBuffStat.WIND_WALK) != null) {
+        } else if (chr.getSkillLevel(SkillFactory.getSkill(WindArcher.WIND_WALK)) > 0 && chr.getBuffedValue(MapleBuffStat.WIND_WALK) != null) {
             chr.cancelEffectFromBuffStat(MapleBuffStat.WIND_WALK);
             chr.cancelBuffStats(MapleBuffStat.WIND_WALK);
         }

@@ -69,12 +69,12 @@ public class MagicianCreator extends CharacterFactory {
             recipe.setRemainingSp(recipe.getRemainingSp() - improveSp);
 
             int toUseSp = 5;
-            Skill improveMpRec = SkillFactory.INSTANCE.getSkill(Magician.IMPROVED_MP_RECOVERY);
+            Skill improveMpRec = SkillFactory.getSkill(Magician.IMPROVED_MP_RECOVERY);
             recipe.addStartingSkillLevel(improveMpRec, toUseSp);
             improveSp -= toUseSp;
 
             if (improveSp > 0) {
-                Skill improveMaxMp = SkillFactory.INSTANCE.getSkill(Magician.IMPROVED_MAX_MP_INCREASE);
+                Skill improveMaxMp = SkillFactory.getSkill(Magician.IMPROVED_MAX_MP_INCREASE);
                 recipe.addStartingSkillLevel(improveMaxMp, improveSp);
             }
         }
